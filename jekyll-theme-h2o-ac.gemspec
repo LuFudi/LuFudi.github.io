@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-    spec.name          = "jekyll-theme-h2o-ac"
-    spec.version       = "1.5.1"
-    spec.authors       = ["zhonger"]
-    spec.email         = ["zhonger@live.cn"]
+    spec.name          = "jekyll-theme-fd"
+#     spec.version       = "1.5.1"
+    spec.authors       = ["LuFudi"]
+    spec.email         = ["1093626996@qq.com"]
   
-    spec.summary       = "A Jekyll theme for researchers and maintainers based on Jekyll and H2O theme."
+    spec.summary       = ""
     spec.homepage      = "https://github.com/zhonger/jekyll-theme-H2O-ac"
     spec.license       = "MIT"
 
