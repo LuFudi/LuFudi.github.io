@@ -1,17 +1,14 @@
 ---
 layout: page
-home-title: Welcome to zhonger's blog!
+home-title: 欢迎来到 陆福迪 的博客!
 description: Writing, writing, writing ...
 permalink: /tos.html
 ---
 
 # 本站使用条款
 
-&emsp;&emsp;H2O-ac（[https://h2o-ac.pages.dev](https://h2o-ac.pages.dev)），以下简称“本站”。
+&emsp;&emsp;H2O-ac，以下简称“本站”。
 
-## 隐私政策
-
-&emsp;&emsp;本站非常重视用户隐私和个人信息保护。在您使用本站的过程中，本站可能会收集或使用您的相关信息。在此，将向您说明本站如何收集、使用、保存、共享和转让这些信息。
 
 ### 如何收集和使用有关信息
 

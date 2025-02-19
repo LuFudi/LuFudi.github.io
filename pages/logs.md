@@ -1,6 +1,6 @@
 ---
 layout: page
-home-title: Welcome to zhonger's blog!
+home-title: 欢迎来到 陆福迪 的博客!
 description: Writing, writing, writing ...
 cover: 'https://images.unsplash.com/photo-1630824869986-a5b2f513b1f4'
 cover_author: 'Eean Chen'
