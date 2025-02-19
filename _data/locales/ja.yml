@@ -12,10 +12,7 @@ panel:
   friends: '友達'
   nolink: 'リンクがありません'
 footer:
-  driver: 'このサイトは <a href="//jekyllrb.com" target="_blank" class="extlinks">Jekyll</a> と <a href="https://github.com/zhonger/jekyll-theme-H2O-ac" target="_blank" class="extlinks">H2O-ac</a> を利用しています'
-  views: '総閲覧数'
-  visitors: '総訪問数'
-  upyun: 'CDN サービスプロバイダー'
+  driver: 'このサイトは <a href="//jekyllrb.com" target="_blank" class="extlinks">Jekyll</a> と  target="_blank" class="extlinks">H2O-ac</a> を利用しています'
   running:
     info: 'このサイト経過時間'
     day: '日'

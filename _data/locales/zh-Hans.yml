@@ -12,10 +12,7 @@ panel:
   friends: '朋友们'
   nolink: '暂无链接'
 footer:
-  driver: '本站由 <a href="//jekyllrb.com" target="_blank" class="extlinks">Jekyll</a> 和 (基于 <a href="https://github.com/kaeyleo/jekyll-theme-H2O" target="_blank" class="extlinks">H2O</a> 的) <a href="https://github.com/zhonger/jekyll-theme-H2O-ac" target="_blank" class="extlinks">H2O-ac</a> 强力驱动'
-  views: '总浏览量'
-  visitors: '总访问量'
-  upyun: 'CDN 加速/云存储服务提供商'
+  driver: '本站由 <a href="//jekyllrb.com" target="_blank" class="extlinks">Jekyll</a>  强力驱动'
   running:
     info: '本站已运行'
     day: '天'

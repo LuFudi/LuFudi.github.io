@@ -2,10 +2,10 @@
 version: 1.5.1
 
 # Site settings 配置站点
-title: 'Mr Li'
+title: 'Mr Lu'
 description: '个人的一个技术博客站点，主要用于记录个人在学习过程中遇到的技术问题及解决方法、技术实验，以及一些比较有趣的事情。'
-keyword: 'zhonger，zhonger的博客，nodejs，kvm, 机器学习'
-url: 'https://h2o-ac.pages.dev' # your host
+keyword: ''
+#url: 'https://h2o-ac.pages.dev' # your host
 
 # when build blog on server, if you don't need baseurl, you should leave this value blank.
 # 在服务器上建站时，如果你不需要子域名，请将这一格留空
@@ -21,11 +21,6 @@ baseurl: ''
 languages: ["zh-Hans", "zh-Hant", "en", "ja"]
 default_lang: "zh-Hans"
 
-# Github
-github:
-  enabled: true
-  owner: zhonger
-  repository: jekyll-theme-H2O-ac
 
 # PWA
 pwa:
@@ -38,8 +33,7 @@ nav:
   blog: '/blog/index.html'
   archives: '/archives.html'
   tags: '/tags.html'
-  about:   
-    RSS: '/feed.xml'
+
 
 # Gray for the whole site 全站灰色
 gray: false
@@ -54,12 +48,12 @@ favicon: "/favicon.ico"
 
 # Footer
 footer:
-  since: 2015
+  since: 2020
 
 # Author 配置博主信息
-author: 'zhonger'
-nickname: 'zhonger'
-bio: '全栈开发者，热爱前端、运维和架构设计'
+author: '陆福迪'
+nickname: 'David'
+bio: '普通开发者，热爱后端、中间件和架构设计'
 avatar: '/assets/img/profile.webp'
 
 # Search
@@ -118,16 +112,16 @@ sns:
   # segmentfault: 'https://segmentfault.com/u/wuwozhonger'
 
 # Links 友情链接
-links:
+#links:
   # 'Mr Li': 'https://lisz.me'
 
 # Calendar 日历
 calendar: true
 
 # Supports 赞助商
-supports:
-  upyun: 
-  webify: 
+#supports:
+#  upyun:
+#  webify:
 
 # Badges
 badges:
@@ -141,14 +135,14 @@ badges:
 
 # Alive time
 alivetime: true
-alivestart: "12/23/2021"
+alivestart: "12/23/2020"
 
 # Beian 备案号
-beian: '沪ICP备xxxxxxxx号'
+#beian: '沪ICP备xxxxxxxx号'
 # moe_beian: 'xxxxxxxx'
 
 # CC License
-cclicense: true
+#cclicense: true
 
 # CNZZ Analytics
 # cnzz: 1234567891
@@ -229,7 +223,7 @@ prism:
   line_numbers: true
 
 # RSS
-RSS: true
+#RSS: true
 
 # Permalink
 # See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
