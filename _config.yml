@@ -201,24 +201,15 @@ recommend-tags: true # whether or not display recommend-tags on the sidebar
 recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
 
 # Build settings
-#pagination:
-#  enabled: true
-#  per_page: 5
-#  permalink: 'page:num/'
-#  title: ':title | :num of :max'
-#  limit: 0
-#  sort_field: 'date'
-#  sort_reverse: true
-#分页
-paginate_v2:
+pagination:
   enabled: true
   per_page: 5
-  permalink: '/page/:num/'
+  permalink: 'page:num/'
   title: ':title | :num of :max'
   limit: 0
-  sort:
-    field: date
-    order: desc
+  sort_field: 'date'
+  sort_reverse: true
+
 
 exclude: ['node_modules', 'dev', 'package.json', 'webpack.config.js', '.gitignore', 'README.md', '*.gemspec', '*.gem']
 

@@ -37,7 +37,7 @@ pwa:
 nav:
   首页: '/'
   文章: '/blog/index.html'
-  归档: '/archives.html'
+  时间线: '/archives.html'
   标签: '/tags.html'
 
 # Gray for the whole site 全站灰色

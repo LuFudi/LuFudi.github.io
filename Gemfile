@@ -2,8 +2,8 @@ source "https://rubygems.org"
 #gem "jekyll"
 #gem "jekyll-paginate-v2"
 #gem "github-pages", group: :jekyll_plugins
-gem "jekyll", "~> 3.10.0"  # 强制匹配 GitHub Pages 版本
-gem "jekyll-paginate-v2", "~> 3.0"  # 必须指定兼容版本
+gem "jekyll"
+gem "jekyll-paginate-v2"
 gem "jekyll-feed"
 gem "jekyll-sitemap"
 gem "webrick"
