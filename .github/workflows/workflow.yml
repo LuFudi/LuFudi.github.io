@@ -48,3 +48,5 @@ jobs:
           # deploy_key: ${{ secrets.DEPLOY_KEY }}    # 私有仓库需配置 Deploy Key
           publish_dir: ./_site  # 替换为你的部署目录
           publish_branch: deploy  # 替换为你的发布分支
+          force_orphan: true  # 强制清空目标分支
+          full_commit_message: "Deploy: $(date -u)"
