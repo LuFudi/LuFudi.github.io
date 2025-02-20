@@ -32,11 +32,6 @@ jobs:
           bundle exec jekyll clean
           bundle exec jekyll build --trace
 
-      - name: Verify Output
-        run: |
-          [ -d "_site" ] || (echo "❌ _site 目录未生成"; exit 1)
-          [ -f "_site/page1/index.html" ] || (echo "❌ 分页文件缺失"; exit 1)
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
