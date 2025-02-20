@@ -12,7 +12,8 @@ jobs:
       # 步骤1：检出代码
       - name: Checkout Repository
         uses: actions/checkout@v4
-
+        with:
+          persist-credentials: true
       # 步骤2：设置 Ruby 环境
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
