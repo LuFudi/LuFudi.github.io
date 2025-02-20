@@ -20,8 +20,9 @@ jobs:
           submodules: true
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1.0'
-          bundler-cache: false
+          ruby-version: '3.4.2'
+          bundler-cache: true
+          platforms: x86_64-linux,x86_64-mingw-ucrt
       - run: bundle install
       - run: bundle exec jekyll build --config _config_production.yml
       - name: Build And Deploy
@@ -34,9 +35,9 @@ jobs:
           skip_app_build: true
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "/_site" # App source code path
-          api_location: "" # Api source code path - optional
-          output_location: "" # Built app content directory - optional
+          app_location: "/_site"
+          api_location: ""
+          output_location: ""
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
