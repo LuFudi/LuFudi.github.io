@@ -2,51 +2,68 @@ name: Build and Deploy Jekyll Site
 
 on:
   push:
-    branches: [ master ]  # 替换为你的源码分支
+    branches: [ master ]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:  # 显式声明写入权限
+      contents: write
 
     steps:
-      # 步骤1：检出代码
+      # 步骤1：检出代码（含凭证持久化）
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          persist-credentials: false  # 重要！必须关闭才能用 github_token 推送
+
       # 步骤2：设置 Ruby 环境
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.4.2  # 替换为你的 Ruby 版本
+          ruby-version: 3.4.2
           bundler-cache: true
-            # 显式声明目标平台
-          platforms: x86_64-linux,x86_64-mingw-ucrt
-      - name: Install dependencies
+          platforms: x86_64-linux,x86_64-mingw-ucrt  # 修正缩进
+          cache-version: 2  # 强制刷新缓存
+
+      # 步骤3：安装编译依赖
+      - name: Install Build Essentials
+        run: sudo apt-get install -y build-essential zlib1g-dev
+
+      # 步骤4：配置并安装依赖（合并冗余步骤）
+      - name: Install Dependencies
         run: |
+          bundle config set path vendor/bundle
           bundle config set force_ruby_platform true
           bundle install --jobs 4 --retry 3
-      # 步骤3：安装系统依赖（可选）
-      - name: Install System Dependencies
-        run: sudo apt-get install -y build-essential
 
-      # 步骤4：安装项目依赖
-      - name: Install Bundler Gems
+      # 步骤5：构建验证（关键调试步骤）
+      - name: Build Site with Verification
         run: |
-          bundle config path vendor/bundle
-          bundle install
+          # 强制清理旧构建
+          rm -rf _site
+          
+          # 执行构建并验证输出
+          bundle exec jekyll build --trace
+          
+          # 检查生成的文件
+          if [ ! -d "_site" ]; then
+            echo "❌ _site 目录未生成！"
+            exit 1
+          fi
+          
+          echo "生成的文件列表："
+          ls -lR _site
 
-      # 步骤5：构建网站
-      - name: Build Site
-        run: bundle exec jekyll build  # 替换为你的构建命令
-
-      # 步骤6：部署到 GitHub Pages
+      # 步骤6：部署到 GitHub Pages（优化配置）
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # 公共仓库使用默认 Token
-          # deploy_key: ${{ secrets.DEPLOY_KEY }}    # 私有仓库需配置 Deploy Key
-          publish_dir: ./_site  # 替换为你的部署目录
-          publish_branch: deploy  # 替换为你的发布分支
-          force_orphan: true  # 强制清空目标分支
-          full_commit_message: "Deploy: $(date -u)"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: deploy
+          force_orphan: true
+          user_name: "GitHub Actions Bot"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_message: "Deploy: [$(date +'%Y%m%d-%H%M%S')] Built with Jekyll v3.10.0"
+          keep_files: false  # 强制清空旧文件

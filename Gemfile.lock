@@ -94,7 +94,7 @@ DEPENDENCIES
   h2o-ac-jekyll-extlinks
   jekyll
   jekyll-feed
-  jekyll-paginate-v2
+  jekyll-paginate-v2 (~> 3.0)
   jekyll-sitemap
   nokogiri (~> 1.17.0)
   premonition
