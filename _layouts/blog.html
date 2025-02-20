@@ -3,7 +3,16 @@ layout: default
 home-title: 欢迎来到 陆福迪 的博客!
 description: Writing, writing, writing ...
 ---
-
+{% raw %}
+<!-- 在 blog/index.html 中添加 -->
+<pre>
+总文章数: {{ site.posts | size }}
+所有文章标题:
+{% for post in site.posts %}
+  - {{ post.title }} ({{ post.date }})
+{% endfor %}
+</pre>
+{% endraw %}
 <div
     class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}"
     data-theme="{{ site.theme-color }}"
