@@ -32,8 +32,10 @@ pwa:
 nav:
   首页: '/'
   文章: '/blog/index.html'
-  归档: '/archives.html'
+  时间线: '/archives.html'
   标签: '/tags.html'
+#  about:
+#    RSS: '/feed.xml'
 
 
 # Gray for the whole site 全站灰色
@@ -125,14 +127,14 @@ calendar: true
 #  webify:
 
 # Badges
-#badges:
-#  netlify: true # Netlify
-#  vercel: true # Vercel
-#  cloudflare: true # Cloudflare
-#  foreverblog: true # Foreverblog
-#  wormhole: true # Wormhole
-#  travelling: true # Travelling
-#  notbyAI: true # NotByAI
+badges:
+  netlify: true # Netlify
+  vercel: true # Vercel
+  cloudflare: true # Cloudflare
+  foreverblog: true # Foreverblog
+  wormhole: true # Wormhole
+  travelling: true # Travelling
+  notbyAI: true # NotByAI
 
 # Alive time
 alivetime: true
