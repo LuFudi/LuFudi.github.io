@@ -52,7 +52,10 @@ jobs:
         uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: ./_site  # 显式指定路径
-
+      - name: Check Permissions
+        run: |
+          curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          https://api.github.com/repos/${{ github.repository }}/branches | jq .[].name
   # Deployment job
   deploy:
     environment:
@@ -64,3 +67,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # 必须显式传递
