@@ -64,8 +64,8 @@ search: true
 search_type: docsearch
 docsearch:                     # DocSearch 搜索配置节
   appId: 'ZUSIUXDF5L'       # 获取的应用 ID
-  apiKey: '820fba5f2a0b842ebdca0587a919fb62'    # 获取的应用 Key
-  indexName: 'indexName'       # 获取的索引空间名
+  apiKey: '19ac17a28a4ee3ca8a2591ee72f99d0c'    # 获取的应用 Key
+  indexName: 'lufudiio'       # 获取的索引空间名
 # Night mode
 nightMode: false
 
