@@ -1,4 +1,5 @@
 # jekyll-theme-H2O-ac
+本地启动命令：bundle exec jekyll serve
 
 ![Gem (including prereleases)](https://img.shields.io/gem/v/jekyll-theme-h2o-ac)
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/zhonger/jekyll-theme-h2o-ac/jekyll.yml)
