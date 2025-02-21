@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://lufudi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lufudi.github.io/" rel="alternate" type="text/html" /><updated>2025-02-21T08:30:38+00:00</updated><id>https://lufudi.github.io/feed.xml</id><title type="html">Mr Lu</title><subtitle>个人的一个技术博客站点，主要用于记录个人在学习过程中遇到的技术问题及解决方法、技术实验，以及一些比较有趣的事情。</subtitle><author><name>陆福迪</name></author><entry xml:lang="en"><title type="html">Test en</title><link href="https://lufudi.github.io/test/test-en.html" rel="alternate" type="text/html" title="Test en" /><published>2022-04-29T10:50:00+00:00</published><updated>2022-04-29T10:50:00+00:00</updated><id>https://lufudi.github.io/test/test-en</id><content type="html" xml:base="https://lufudi.github.io/test/test-en.html"><![CDATA[<h2 id="chapter-1">Chapter 1</h2>
+
+<p>This is a test paragraph for internalization.</p>]]></content><author><name>zhonger</name></author><category term="test" /><category term="mathjax" /><summary type="html"><![CDATA[Chapter 1]]></summary></entry><entry><title type="html">MathJax Test</title><link href="https://lufudi.github.io/test/mathjax-test.html" rel="alternate" type="text/html" title="MathJax Test" /><published>2017-07-30T00:00:00+00:00</published><updated>2017-07-30T00:00:00+00:00</updated><id>https://lufudi.github.io/test/mathjax-test</id><content type="html" xml:base="https://lufudi.github.io/test/mathjax-test.html"><![CDATA[<p>mathjax in markdown :)</p>
+
+<p><strong>这是一个不<code class="language-plaintext highlighter-rouge">align</code>的公式</strong>：</p>
+
+\[\forall \alpha \in A, \quad a \cdot b = 0\]
+
+<p><strong>这是一个<code class="language-plaintext highlighter-rouge">align</code>的公式</strong>：</p>
+
+\[\begin{align}
+    \Phi(0,x) = \max_{u \in \mathcal{D}} \bigg[
+        \mathbb{E} &amp; \Phi\left(1, 
+        x + \int_0^1 \sigma^2(s) \, \zeta(s) \, u_s \, ds
+        + \int_0^1 \sigma(s) \, dW_s
+    \right) \\
+        &amp;- \frac{1}{2} \int_0^1 \sigma^2(s) \, \zeta(s) \,
+        \mathbb{E} u_s^2  \, ds
+    \bigg].
+\end{align}\]
+
+<p><strong>注意：</strong>公式块要想有较好的显示效果，必须在公式块标记符<code class="language-plaintext highlighter-rouge">$$</code><strong>前后</strong>留有空行，否则公式将不能正常居中。行内公式无此问题。</p>]]></content><author><name>zhonger</name></author><category term="test" /><category term="mathjax" /><summary type="html"><![CDATA[mathjax in markdown :)]]></summary></entry><entry><title type="html">Hello Jekyll</title><link href="https://lufudi.github.io/hello-jekyll.html" rel="alternate" type="text/html" title="Hello Jekyll" /><published>2017-04-18T00:00:00+00:00</published><updated>2017-04-18T00:00:00+00:00</updated><id>https://lufudi.github.io/hello-jekyll</id><content type="html" xml:base="https://lufudi.github.io/hello-jekyll.html"><![CDATA[<blockquote>
+  <p>Transform your plain text into static websites and blogs.</p>
+</blockquote>
+
+<h3 id="welcome">Welcome</h3>
+
+<p>This site aims tto be a comprehensive guide to Jekyll. We’ll cover topics such as getting your site up and running, creating and managing your content, customizing the way your site works and looks, deploying to various environments, and give you some advice on participating in the future development of Jekyll itself.</p>
+
+<h3 id="so-what-is-jekyll-exactlypermalink">So what is Jekyll, exactly?Permalink</h3>
+
+<p>Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like <a href="https://daringfireball.net/projects/markdown/">Markdown</a>) and our <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.</p>
+
+<h3 id="helpful-hintspermalink">Helpful HintsPermalink</h3>
+
+<p>Throughout this guide there are a number of small-but-handy pieces of information that can make using Jekyll easier, more interesting, and less hazardous. Here’s what to look out for.</p>
+
+<h3 id="video-test">Video Test</h3>
+
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/gfmjMWjn-Xg" frameborder="0"></iframe>]]></content><author><name>Jekyll</name></author><category term="jekyll" /><summary type="html"><![CDATA[Transform your plain text into static websites and blogs.]]></summary></entry><entry><title type="html">H2O theme for Jekyll</title><link href="https://lufudi.github.io/tech/new-theme-h2o.html" rel="alternate" type="text/html" title="H2O theme for Jekyll" /><published>2017-04-18T00:00:00+00:00</published><updated>2017-04-18T00:00:00+00:00</updated><id>https://lufudi.github.io/tech/new-theme-h2o</id><content type="html" xml:base="https://lufudi.github.io/tech/new-theme-h2o.html"><![CDATA[<p>正如我在<a href="http://weibo.com/1374146504/profile?topnav=1&amp;wvr=6">微博</a>上所说的，使用<a href="http://jekyll.com.cn/">Jekyll</a>半年以来一直没有令我满意的主题模板，所以开始计划自己写一套好看又好用的主题模板。设计之初就明确了极简主义，风格采用扁平化了，通过卡片式设计来进行区块分明的布局，参考了Medium的ui样式和知乎专栏的视觉风格。</p>
+
+<h2 id="h2o">H2O</h2>
+
+<p><a href="https://github.com/kaeyleo/jekyll-theme-H2O">源码及使用文档 →</a></p>
+
+<p><img src="http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-realhome.jpg" alt="" /></p>
+
+<p>新主题名叫”H2O”，基于Jekyll 3.0.x（使用<code class="language-plaintext highlighter-rouge">gem update jekyll</code>升级Jekyll），Markdown的代码高亮不再支持pygments转而使用rouge，咱已经默认配置了 <code class="language-plaintext highlighter-rouge">highlighter: rouge</code> 。用到的技术栈也很简单：引入jQuery类库，使用Sass编写样式，使用Gulp来编译Sass、合并压缩css、js，开源在<a href="https://github.com/kaeyleo/jekyll-theme-H2O">Github</a>上，稍作配置即可用于你的Jekyll博客上。</p>
+
+<p><img src="http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-sketchdesign.png" alt="Design with Sketch" /></p>
+
+<p>使用Sketch完成H2O主题的原型设计</p>
+
+<p><img src="http://on2171g4d.bkt.clouddn.com/jekyll-theme-vs.jpg" alt="My Jekyll themes" /></p>
+
+<p>比之前漂亮不少吧，下面聊聊H2O的新特性。</p>
+
+<h2 id="新特性">新特性</h2>
+
+<h3 id="主题配色">主题配色</h3>
+
+<p>支持两种主题配色——蓝色和粉色。</p>
+
+<p><img src="https://github.com/kaeyleo/jekyll-theme-H2O/blob/master/screenshot/jekyll-theme-h2o-themecolor.jpg?raw=true" alt="" /></p>
+
+<h3 id="侧边栏">侧边栏</h3>
+
+<p>相比自己上一个版本的博客主题，首页增加了侧边栏，方便展示博主的个人信息和文章标签。</p>
+
+<h3 id="社交图标">社交图标</h3>
+
+<p>使用阿里的图标管理平台<a href="http://iconfont.cn/">Iconfont</a>整理了一套<strike>墙内外</strike>常用的社交图标，包括微博、知乎、掘金、简书、Github等十多个网站，鼠标悬停会显示该站的主题色。</p>
+
+<p><img src="http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-snstext.jpg" alt="social iconfont" /></p>
+
+<h3 id="前后文导航">前后文导航</h3>
+
+<p><img src="http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-nextpostnav.png" alt="Next post navigator" /></p>
+
+<h3 id="自定义文章封面">自定义文章封面</h3>
+
+<p>在Markdown的<a href="http://jekyll.com.cn/docs/frontmatter/">文章头信息</a>里添加cover参数来配置文章的封面图片，如果没有配置封面，则默认【主题色+底纹】的组合作为文章封面。值得一提的是，H2O有两种（粉、蓝）主题色和六种底纹（电路板、食物、云海、钻石等等）供你选择。</p>
+
+<h3 id="头图个性化底纹">头图个性化底纹</h3>
+
+<p>在没有图片的情况下单纯显示颜色会不会太无趣了点？于是想到了加入底纹元素，底纹素材是SVG格式的（保存在css样式里），加载比图片快很多。</p>
+
+<p><img src="http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-headerpatterns.jpg" alt="" /></p>
+
+<h3 id="代码高亮">代码高亮</h3>
+
+<p>模板引入了<a href="http://prismjs.com">Prism.js</a>，一款轻量、可扩展的代码语法高亮库。</p>
+
+<p>很多知名网站如<a href="https://developer.mozilla.org/">MDN</a>、<a href="https://css-tricks.com/">css-tricks</a>也在用它，JavaScript 之父 <a href="https://brendaneich.com/">Brendan Eich</a> 也在个人博客上使用。</p>
+
+<p><img src="http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-highlight.png" alt="代码高亮" /></p>
+
+<p>遵循 <a href="https://www.w3.org/TR/html5/grouping-content.html#the-pre-element">HTML5</a> 标准，Prism 使用语义化的 <code class="language-plaintext highlighter-rouge">&lt;pre&gt;</code> 元素和 <code class="language-plaintext highlighter-rouge">&lt;code&gt;</code> 元素来标记代码区块：</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;pre&gt;&lt;code</span> <span class="na">class=</span><span class="s">"language-css"</span><span class="nt">&gt;</span>p { color: red }<span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</code></pre></div></div>
+
+<p>在Markdown中你可以这样写：</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">css
+</span><span class="nt">p</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="no">red</span> <span class="p">}</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<p>支持语言：</p>
+
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Sass</li>
+  <li>JavaScript</li>
+  <li>CoffeeScript</li>
+  <li>Java</li>
+  <li>C-like</li>
+  <li>Swift</li>
+  <li>PHP</li>
+  <li>Go</li>
+  <li>Python</li>
+</ul>
+
+<h3 id="第三方评论">第三方评论</h3>
+
+<p>由于多说关闭，又对国内其他第三方评论插件无感，所以将<a href="https://disqus.com/">Disqus</a>列为首选（目前模板也只提供了这个），请自备梯子。</p>
+
+<h3 id="移动端优化">移动端优化</h3>
+
+<p>响应式设计，对手机和平板等移动设备做了优化。</p>
+
+<p><img src="http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-realm.png" alt="" /></p>
+
+<h3 id="关于阅读体验">关于阅读体验</h3>
+
+<p>我认为在内容质量相同的情况下，出色的沉浸式阅读体验是博客的核心。</p>
+
+<p>H2O在这方面还有很多需要完善的地方，比如：<strike>代码高亮</strike>、夜间模式、查看大图…</p>
+
+<h3 id="其他特性">其他特性：</h3>
+
+<ul>
+  <li>网页标题SEO优化</li>
+  <li>标签索引，点击标签跳转到标签目录，即可查看对应的全部文章</li>
+  <li>漂亮</li>
+  <li>好看</li>
+  <li>美</li>
+</ul>
+
+<h2 id="最后">最后</h2>
+
+<p>本想趁这次机会将整站https化的，但折腾了半天发现弹性web托管并不支持，所以暂时搁置https的想法。另外，博客统计工具一直使用的是<a href="https://tongji.baidu.com">百度统计</a>，这次新增了Google Analytics。</p>
+
+<p>这次从0到1，独自设计、开发再到发布大约用了一周时间，也算完成一个小小的开源项目了，后续也将持续完善和更新，欢迎<a href="https://github.com/kaeyleo/jekyll-theme-H2O">Star</a>。</p>]]></content><author><name>kaeyleo</name></author><category term="tech" /><category term="jekyll" /><category term="前端开发" /><category term="设计" /><summary type="html"><![CDATA[正如我在微博上所说的，使用Jekyll半年以来一直没有令我满意的主题模板，所以开始计划自己写一套好看又好用的主题模板。设计之初就明确了极简主义，风格采用扁平化了，通过卡片式设计来进行区块分明的布局，参考了Medium的ui样式和知乎专栏的视觉风格。]]></summary></entry></feed>
