@@ -3,6 +3,9 @@ layout: page
 home-title: 欢迎来到 陆福迪 的博客!
 description: Writing, writing, writing ...
 permalink: /index.html
+cover: /picture/城市.avif
+cover_author: 'Andrea De Santis'
+cover_author_link: 'https://unsplash.com/@santesson89'
 langs: ["zh-Hans", "en"]
 lang: "zh-Hans"
 ---

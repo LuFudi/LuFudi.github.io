@@ -31,7 +31,7 @@ pwa:
 # Navigation links
 nav:
   首页: '/'
-  文章: '/blog/index.html'
+  文章: '/blog.html'
   时间线: '/archives.html'
   标签: '/tags.html'
 #  about:
@@ -56,7 +56,7 @@ footer:
 # Author 配置博主信息
 author: '陆福迪'
 nickname: 'David'
-bio: '普通开发者，热爱后端、中间件和架构设计'
+bio: '不知名开发，热爱后端、中间件和架构设计'
 avatar: '/assets/img/profile.webp'
 
 # Search
@@ -206,8 +206,7 @@ pagination:
   per_page: 5
   permalink: 'page:num/'
   title: ':title | :num of :max'
-  limit: 0
-  sort_field: 'date'
+  sort_field: 'pin'
   sort_reverse: true
 
 
