@@ -13,8 +13,8 @@ panel:
   nolink: '暂无链接'
 footer:
   driver: '本站由 <a href="//jekyllrb.com" target="_blank" class="extlinks">Jekyll</a>  强力驱动'
-  views: '总浏览量'
-  visitors: '总访问量'
+#  views: '总浏览量'
+#  visitors: '总访问量'
   running:
     info: '本站已运行'
     day: '天'
