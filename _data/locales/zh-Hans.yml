@@ -36,9 +36,9 @@ post:
     time:
       info: '阅读全文大约需要'
       unit: '分钟'
-    view:
-      info: '本文总阅读量'
-      unit: '次'
+#    view:
+#      info: '本文总阅读量'
+#      unit: '次'
   tips:
     left: '已经是最新一篇文章了！'
     right: '已经是最后一篇文章了！'
