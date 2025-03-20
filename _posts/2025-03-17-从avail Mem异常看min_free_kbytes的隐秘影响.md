@@ -6,12 +6,13 @@ author: 陆福迪
 cover: '/picture/1.avif'
 cover_author: 'Lerone Pieters'
 cover_author_link: 'https://unsplash.com/@leronep'
+categories: Linux
 tags: 
 - Linux
 - 生产问题
----
 
-## 創造力的祕密，就在於懂得如何隱藏你的來源。
+---
+##  創造力的祕密，就在於懂得如何隱藏你的來源。
 
 ### 背景
 
@@ -19,9 +20,7 @@ tags:
 接口服务主要功能是监听mq消息，将变更的产品数据信息写入数据库，为其设置的最大堆内存是12G，其数据压力并不大。
 
 
-
-### 排查流程
-#### 检查服务器的内存使用情况
+### 检查服务器的内存使用情况
 首先是经典的 <span style="background:#fbd4d0;">**top free df** </span>的 三连
 
 ```
@@ -44,7 +43,7 @@ PID      USER   PR  NI   VIRT        RES         SHR         S     %CPU      %ME
 
    
 
-#### 排查总内存丢失问题
+### 排查总内存丢失问题
 
 首先排查操作系统预留内存的情况，**查看内核保留内存**。检查`dmesg`日志中内存初始化信息：
 
@@ -94,9 +93,11 @@ PID      USER   PR  NI   VIRT        RES         SHR         S     %CPU      %ME
 
 
 
-#### 排查可用内存异常
+### 排查可用内存异常
+1111111
 
-###### buff/cache内存分析与释放
+#### 分析与释放buff-cache内存
+
 
 首先查找的方向，是**不可回收的buff/cache内存过大**，导致可用内存变小。
 
@@ -123,7 +124,7 @@ buff/cache内存显著减小了，这部分内存绝大部分也增加到了free
 
 目前只能看到avail远小于free，这是相当不正常的，肯定还遗漏了重要的计算参数，所以继续将思路延伸，查找available内存详细的计算方式。
 
-###### available内存计算方式
+#### available内存计算方式
 
 ```
 void si_meminfo(struct sysinfo *val) {
@@ -158,7 +159,7 @@ MemAvailable≈MemFree+可回收缓存（Active(file)+Inactive(file)+SReclaimabl
 
 
 
-###### 计算low_watermark
+#### 计算low_watermark
 
 > Linux 内核中的 **内存水位线（Memory Watermarks）** 决定了何时触发内存回收机制（如 **kswapd** 后台回收或直接回收）。其核心参数是 **`vm.min_free_kbytes`**，该参数直接控制 **最低保留空闲内存（min_free_kbytes）**，并间接决定了其他水位线（`low` 和 `high`），**这部分内存属于系统预留内存，不会计算在可用内存内**
 
@@ -174,7 +175,7 @@ $ cat /proc/sys/vm/min_free_kbytes
 
 
 
-###### 设置预留内存
+#### 设置预留内存
 
 预留内存的作用：
 
