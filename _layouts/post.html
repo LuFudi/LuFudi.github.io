@@ -24,18 +24,24 @@ type: post
                 </svg>
                 {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}
             </span>
-            <time class="post-meta-item" datetime="{{ page.date | date:" %y-%m-%d" }}">
+            <!-- 创建时间 -->
+            <time class="post-meta-item" datetime="{{ page.date | date: '%Y-%m-%d' }}">
                 <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-calendar"></use>
                 </svg>
-                <span class="create-at"></span>
+                <span class="create-at">{{ page.date | date: '%Y-%m-%d'}}</span>
             </time>
-            <time class="post-meta-item" datetime="{{ page.date | date:" %y-%m-%d" }}">
+
+            <!-- 更新时间 -->
+            {% if page.last_modified_at %}
+            <time class="post-meta-item" datetime="{{ page.last_modified_at | date: '%Y-%m-%d' }}">
                 <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-update"></use>
                 </svg>
-                <span class="update-at"></span>
+                <span class="update-at">{{ page.last_modified_at | date: "%Y-%m-%d" }}</span>
             </time>
+            {% endif %}
+
             <span class="post-meta-item">
                 <svg class="icon words" aria-hidden="true">
                     <use xlink:href="#icon-words"></use>
