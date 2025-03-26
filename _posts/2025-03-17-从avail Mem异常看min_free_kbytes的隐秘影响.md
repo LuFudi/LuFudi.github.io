@@ -94,7 +94,6 @@ PID      USER   PR  NI   VIRT        RES         SHR         S     %CPU      %ME
 
 
 ### 排查可用内存异常
-1111111
 
 #### 分析与释放buff-cache内存
 
